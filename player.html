@@ -62,20 +62,20 @@
                 float: left;
             }
 
-            volume-slider {
+            #volume-slider {
                 margin: 10px 2.5%;
                 width: 58%;
             }
-            volume-slider::-webkit-slider-runnable-track {
+            #volume-slider::-webkit-slider-runnable-track {
                 background: rgba(0, 125, 181, 0.6);
             }
-            volume-slider::-moz-range-track {
+            #volume-slider::-moz-range-track {
                 background: rgba(0, 125, 181, 0.6);
             }
-            volume-slider::-ms-fill-upper {
+            #volume-slider::-ms-fill-upper {
                 background: rgba(0, 125, 181, 0.6);
             }
-            volume-slider::before {
+            #volume-slider::before {
                 width: var(--volume-before-width);
             }
             #mute-icon {
@@ -182,7 +182,7 @@
         </style>
         <div id="audio-player-container">
             <audio src="" preload="metadata" loop></audio>
-            <p>AudiPlayV2</p><!--Title-->
+            <p>My song title</p><!--Title-->
             <button id="play-icon"></button>
             <span id="current-time" class="time">0:00</span>
             <input type="range" id="seek-slider" max="100" value="0">
