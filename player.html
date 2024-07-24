@@ -61,7 +61,15 @@
                 margin: 28.5px 0 18.5px 0;
                 float: left;
             }
-
+            output {
+                display: inline-block;
+                width: 32px;
+                text-align: center;
+                font-size: 20px;
+                margin: 10px 2.5% 0 5%;
+                float: left;
+                clear: left;
+            }
             #volume-slider {
                 margin: 10px 2.5%;
                 width: 58%;
@@ -189,7 +197,7 @@
             <span id="duration" class="time">0:00</span>
 
             <!--volumn slider can be added using css-->
-            <output id="volume-output"></output>
+            <output id="volume-output">100</output>
             <input type="range" id="volume-slider" max="100" value="100">
             <button id="mute-icon"></button>
         </div>
