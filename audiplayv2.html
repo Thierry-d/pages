@@ -197,37 +197,9 @@
         </div>
     </template>
 
-<div class="container" >
-  <br>
-  <br><br>
-  <h2> See Demo - (Multiple Audio Player Support)</h2>
-  <br>
-  <!--Audio Tags-->
+    <!--Audio Tags-->
     <audio-player data-src="https://github.com/SH20RAJ/AudiPlay/raw/main/Ark.mp3"></audio-player>
-
-<audio-player data-src="https://assets.codepen.io/4358584/Anitek_-_Komorebi.mp3"></audio-player>
-
-  <br><br>
-</div>
-
-  
-  <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
-<div class="container" id="mypost"></div>
-<script>
-fetch('README.md').then(response => response.text())
-  .then(data => {
-  console.log(data);
-  var converter = new showdown.Converter();
-var md = data;
-var html = converter.makeHtml(md);
-  document.querySelector('#mypost').innerHTML = html;
-});
-</script>
-  
-  
-<!-- JS CDN -->
-  <script type="module" src="audiplayv2.js"></script>
-  
-Special Thanks to <a href="https://css-tricks.com/lets-create-a-custom-audio-player/">Css Tricks</a>
+    <audio-player data-src="https://assets.codepen.io/4358584/Anitek_-_Komorebi.mp3"></audio-player>
+    <script type="module" src="https://cdn.jsdelivr.net/gh/SH20RAJ/AudiPlayV2@main/audiplayv2.js"></script>
 </body>
 </html>
